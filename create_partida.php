@@ -28,6 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <h2>Adicionar Nova Partida</h2>
 <form method="POST">
+    <link rel="stylesheet" href="style.css">
     <label>Time Casa:</label>
     <select name="time_casa" required>
         <option value="">Selecione</option>
@@ -56,5 +57,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <input type="submit" value="Adicionar Partida">
 </form>
 <br>
-<a href="create.php?show=partidas">Voltar para Partidas</a>
-?>
+<a href="create.php?show=partidas" class="btn-voltar">Voltar para Partidas</a>
