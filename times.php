@@ -3,9 +3,9 @@ include 'db.php';
 
 $result = $conn->query("SELECT * FROM times");
 ?>
-
-<h2>Times</h2>
-<a href="create_time.php">Adicionar Novo Time</a>
+<link rel="stylesheet" href="style.css">
+<h2 class="titulo-times">Times</h2>
+<a href="create_time.php" class="btn-times">Adicionar Novo Time</a>
 <table border="1">
     <tr>
         <th>ID</th>
@@ -29,5 +29,4 @@ $result = $conn->query("SELECT * FROM times");
     <?php endif; ?>
 </table>
 <br>
-<a href="create.php">Voltar</a>
-?>
+<a href="create.php" class="btn-voltar">Voltar</a>

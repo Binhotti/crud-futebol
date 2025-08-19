@@ -18,8 +18,9 @@ $result = $conn->query("SELECT * FROM times WHERE id=$id");
 $row = $result->fetch_assoc();
 ?>
 
-<h2>Editar Time</h2>
+<h2 class="titulo-times">Editar Time</h2>
 <form method="POST">
+    <link rel="stylesheet" href="style.css">
     <label>Nome do Time:</label>
     <input type="text" name="nome" value="<?= htmlspecialchars($row['nome']) ?>" required>
     <br><br>
@@ -29,5 +30,4 @@ $row = $result->fetch_assoc();
     <input type="submit" value="Salvar Alterações">
 </form>
 <br>
-<a href="times.php">Voltar para Times</a>
-?>
+<a href="times.php" class="btn-voltar">Voltar para Times</a>

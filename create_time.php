@@ -14,8 +14,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<h2>Adicionar Novo Time</h2>
+<h2 class="titulo-times">Adicionar Novo Time</h2>
 <form method="POST">
+    <link rel="stylesheet" href="style.css">
     <label>Nome do Time:</label>
     <input type="text" name="nome" required>
     <br><br>
@@ -25,5 +26,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <input type="submit" value="Adicionar Time">
 </form>
 <br>
-<a href="times.php">Voltar para Times</a>
-?>
+<a href="times.php" class="btn-voltar">Voltar para Times</a>

@@ -13,7 +13,7 @@ $sql = "SELECT p.id,
 $result = $conn->query($sql);
 ?>
 
-<h2>Partidas</h2>
+<h2 class="titulo-times">Partidas</h2>
 <table border="1">
     <tr>
         <th>ID</th>
@@ -39,5 +39,5 @@ $result = $conn->query($sql);
     <?php endif; ?>
 </table>
 <br>
-<a href="create_partida.php">Adicionar Nova Partida</a>
-?>
+<a href="create_partida.php" class="btn-nova-partida">Adicionar Nova Partida</a>
+<br><br>
