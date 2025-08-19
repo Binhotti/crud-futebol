@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         text-decoration: none;
         font-size: 16px;
         font-weight: bold;
-        transition: 0.3s;
+        transition: 0.2s;
     ' 
     onmouseover=\"this.style.backgroundColor='#218838'\" 
     onmouseout=\"this.style.backgroundColor='#28a745'\">
